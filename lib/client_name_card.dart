@@ -1,16 +1,11 @@
 import 'package:flutter/material.dart';
-import './account.dart';
+
+import './account_info.dart';
+import './client.dart';
 
 class ClientNameCard extends StatelessWidget {
-  final String _accountName;
-  final String _accountNumber;
-  final String _datePeriod;
-  List<String> _policies= const['Car','Home','Life'];
 
-
-  ClientNameCard(this._accountName, this._accountNumber,this._datePeriod);
-
-
+  var clientOne=Client('Jim Doyle', '6306952312', '06/21');
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -18,7 +13,10 @@ class ClientNameCard extends StatelessWidget {
         child: InkWell(
           splashColor: Colors.teal[400].withAlpha(30),
           onTap: () {
-            AccountInfo();
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => AccountInfo()),
+            );
           },
           child: Container(
             width: 350,
@@ -31,17 +29,17 @@ class ClientNameCard extends StatelessWidget {
                   TextSpan(
                     children: <TextSpan>[
                       TextSpan(
-                          text: '                                                                  Car',
+                          text: '                                                        Car',
                           style: TextStyle(fontSize: 16)),
                       TextSpan(
-                          text: '\n$_accountName     ',
+                          text: '\n${clientOne.accountName}     ',
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 16)),
                       TextSpan(
-                          text: 'Date Due: $_datePeriod              Home',
+                          text: 'Due: ${clientOne.datePeriod}             Home',
                           style: TextStyle(fontSize: 16)),
                       TextSpan(
-                          text: '\nacct: $_accountNumber                                           Life',
+                          text: '\nacct: ${clientOne.accountNumber}                        Life',
                           style: TextStyle(fontSize: 16)),
 
                     ],

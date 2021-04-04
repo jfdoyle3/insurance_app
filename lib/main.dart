@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:insurance_app/account.dart';
+import 'package:insurance_app/account_info.dart';
 
 import './client_name_card.dart';
-import './account.dart';
-
+import './account_info.dart';
+import './client.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,8 +32,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children:[
-           // ClientNameCard('Jim Doyle','123456','06/21'),
-            AccountInfo(),
+           ClientNameCard(),
 
           ],
         ),
