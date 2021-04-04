@@ -29,17 +29,17 @@ class ClientNameCard extends StatelessWidget {
                   TextSpan(
                     children: <TextSpan>[
                       TextSpan(
-                          text: '                                                        Car',
+                          text: '                                                                Car',
                           style: TextStyle(fontSize: 16)),
                       TextSpan(
                           text: '\n${clientOne.accountName}     ',
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 16)),
                       TextSpan(
-                          text: 'Due: ${clientOne.datePeriod}             Home',
+                          text: 'Due: ${clientOne.datePeriod}                     Home',
                           style: TextStyle(fontSize: 16)),
                       TextSpan(
-                          text: '\nacct: ${clientOne.accountNumber}                        Life',
+                          text: '\nPolicy Account: ${clientOne.accountNumber}             Life',
                           style: TextStyle(fontSize: 16)),
 
                     ],
