@@ -4,7 +4,6 @@ import './client_name_card.dart';
 import './client.dart';
 
 class AccountInfo extends StatefulWidget {
-
   @override
   _AccountInfoState createState() => _AccountInfoState();
 }
@@ -14,9 +13,13 @@ class _AccountInfoState extends State<AccountInfo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Account Info') ,
+        title: Text('Account Info'),
       ),
-      body: Text('ll'),
+      body: Column(
+        children: [
+
+        ],
+      ),
     );
   }
 }
