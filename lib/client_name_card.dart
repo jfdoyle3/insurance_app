@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
 
 import './account_info.dart';
-import './client.dart';
+
 
 class ClientNameCard extends StatelessWidget {
+  final String _accountName;
+  final String _accountNumber;
 
-  var clientOne=Client('Jim Doyle', '6306952312', '06/21');
+
+
+  ClientNameCard(this._accountName,this._accountNumber);
+
+  String get accountName => _accountName;
+
+  String get accountNumber => _accountNumber;
+
+  var clientOne=ClientNameCard('Jim','0293045');
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -36,7 +47,7 @@ class ClientNameCard extends StatelessWidget {
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 16)),
                       TextSpan(
-                          text: 'Due: ${clientOne.datePeriod}                     Home',
+                          text: 'Due: 06/21                     Home',
                           style: TextStyle(fontSize: 16)),
                       TextSpan(
                           text: '\nPolicy Account: ${clientOne.accountNumber}             Life',

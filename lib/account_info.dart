@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import './client_name_card.dart';
 import './client.dart';
-import './autoInfo.dart';
+
 
 class AccountInfo extends StatefulWidget {
   @override
@@ -10,6 +10,11 @@ class AccountInfo extends StatefulWidget {
 }
 
 class _AccountInfoState extends State<AccountInfo> {
+
+  autoInfo(){
+    print('Aunto Info Funcion');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,15 +44,14 @@ class _AccountInfoState extends State<AccountInfo> {
                           text:'\nPolicy Number: 6306952312',
                           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
                     ],
-
                   ),
                 ),
                 IconButton(
                   icon: Icon(Icons.directions_car),
                   onPressed: (){
-                    AutoInfo();
+                    print('Car');
+                    autoInfo;
                   },
-
                 ),
                 IconButton(
                   icon: Icon(Icons.home),
@@ -64,6 +68,7 @@ class _AccountInfoState extends State<AccountInfo> {
               ],
             ),
           ),
+
         ],
       ),
     );
