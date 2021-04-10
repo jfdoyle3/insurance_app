@@ -4,16 +4,6 @@ import './account_info.dart';
 
 
 class ClientNameCard extends StatelessWidget {
-  final String _accountName;
-  final String _accountNumber;
-
-
-
-  ClientNameCard(this._accountName,this._accountNumber);
-
-  String get accountName => _accountName;
-
-  String get accountNumber => _accountNumber;
 
   var clientOne=ClientNameCard('Jim','0293045');
 

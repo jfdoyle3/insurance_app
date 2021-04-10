@@ -5,11 +5,23 @@ import './client.dart';
 
 
 class AccountInfo extends StatefulWidget {
+  final String _accountName;
+  final String _accountNumber;
+
+
+
+  AccountInfo(this._accountName,this._accountNumber);
+
+  String get accountName => _accountName;
+
+  String get accountNumber => _accountNumber;
+
   @override
   _AccountInfoState createState() => _AccountInfoState();
 }
 
 class _AccountInfoState extends State<AccountInfo> {
+
 
   autoInfo(){
     print('Aunto Info Funcion');

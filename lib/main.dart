@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children:[
-           ClientNameCard('Jim','123456'),
+           account('Jim','123456'),
 
           ],
         ),
