@@ -24,7 +24,7 @@ class _AccountInfoState extends State<AccountInfo> {
 
 
   autoInfo(){
-    print('Aunto Info Funcion');
+    print('Auto Info Function');
   }
 
   @override

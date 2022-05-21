@@ -5,7 +5,15 @@ import './account_info.dart';
 
 class ClientNameCard extends StatelessWidget {
 
+  ClientNameCard(String s, String t);
+
   var clientOne=ClientNameCard('Jim','0293045');
+
+  get accountName => null;
+
+  get accountNumber => null;
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +24,7 @@ class ClientNameCard extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => AccountInfo()),
+              MaterialPageRoute(builder: (context) => AccountInfo('Jim','0293045')),
             );
           },
           child: Container(

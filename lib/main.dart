@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children:[
-           account('Jim','123456'),
+           // account('Jim','123456'),
 
           ],
         ),
